@@ -1,0 +1,203 @@
+//21 ejercicio
+{
+//Exentar o reprobar
+let cal1 = prompt("ingresa tu calificacion")
+let cal2 = prompt("ingresa tu calificacion")
+let cal3 = prompt("ingresa tu calificacion")
+let promedio = (cal1+cal2+cal3)/3 //formula para ver si exento o reprobo
+if(promedio>= 9){
+ console.log("estas exento")
+}else{
+  console.log("reprobaste")
+}
+}
+//22 ejercicio
+{
+//Promedio final
+let cal1 = prompt("ingresa tu calificacion")
+let cal2 = prompt("ingresa tu calificacion")
+let cal3 = prompt("ingresa tu calificacion")
+let promedio = (cal1+cal2+cal3)/3 //formula para ver el promedio final
+if(promedio>= 9){
+ console.log("estas exento")
+}else if (promedio>6<9){
+  console.log("eres ordinario")
+}else{
+  console.log("reprobaste")
+}
+}
+//23 ejercicio
+{
+//numero positivos, negativos o nulos
+let num = promt("coloca un numero")
+if(num<0){
+  console.log("es positivo")
+}else if(num=0){ //condicional de el numero
+  console.log("es cero")
+}else{
+  console.log("es negativo")
+}
+}
+//24 ejercicio
+{
+//Dias de la semana
+let dia = prompt("ingresa un numero del 1 al 7")
+if(dia=1){
+  console.log("lunes")
+}else if(dia=2){
+  console.log("martes")
+}else if(dia=3){
+  console.log("miercoles")
+}else if(dia=4){ //condicionales de el dia de la semana
+  console.log("jueves")
+}else if(dia=5){
+  console.log("viernes")
+}else if(dia=6){
+  console.log("sabado")
+}else if(dia=7){
+  console.log("domingo")
+}else{
+  console.log("error de opción")
+}
+}
+//25 ejercicio
+{
+//Signos de suma y resta
+let num1 = prompt("ingresa el primer numero")
+let num2 = prompt("ingresa el segundo numero")
+let num3 = prompt("ingresa el tercer numero")
+if(num1>-1){
+  let suma = num1+num2+num3 //formulas para hacer la operacion deseada
+  console.log(suma)
+}else{
+  let mult = num1*num2*num3
+  console.log(mult)
+}
+}
+//26 ejercicio
+{
+//Aprobar o reprobar
+let num1 = prompt("ingrese la calificación")
+let num2 = prompt("ingrese la calificación")
+let num3 = prompt("ingrese la calificación")
+let num4 = prompt("ingrese la calificación")
+let num5 = prompt("ingrese la calificación")
+let promedio = (num1*num2*num3*num4*num5)/5 //formula para ver si aprobo o reprobo
+if(promedio>=6){
+  console.log("aprobaste")
+}else{
+  console.log("reprobaste")
+}
+}
+//27 ejercicio
+{
+//Identifica el triangulo
+let l1 = prompt("ingresa el primer lado")
+let l2 = prompt("ingresa el segundo lado")
+let l3 = prompt("ingresa el tercer lado")
+if(l1=l2 &&=l3){
+  console.log("es un triangulo equilatero")
+}else if(l1=l2, l1=l3){ //condicional para ver que triangulo es
+  console.log("es un triangulo isosceles")
+}else{
+  console.log("es un triangulo escaleno")
+}
+}
+//28 ejercicio
+{
+//numeros mayor a menor
+let num1 = prompt("ingresa un numero")
+let num2 = prompt("ingresa un numero")
+let num3 = prompt("ingresa un numero")
+if(num1<num2 &&num2<num3){ //condicionales para ver si el numero es mayor o menor
+  console.log(`${num3},${num2},${num1}`)
+}else if(num1>num2 &&num2>num3){
+  console.log(`${num1},${num2},${num3}`)
+}else if(num1<num2 &&num2>num3){
+  console.log(`${num2},${num1},${num3}`)
+}else if(num1>num2 &&num2<num3){
+  console.log(`${num1},${num3},${num2},`)
+}else{
+  console.log("no existe")
+}
+}
+//29 ejercicio
+{
+//meses del año
+let mes = prompt("ingresa un numero del 1 al 12")
+if(mes=1){
+  console.log("enero")
+}else if(mes=2){
+  console.log("febrero")
+}else if(mes=3){
+  console.log("marzo")
+}else if(mes=4){
+  console.log("abril")
+}else if(mes=5){
+  console.log("mayo")
+}else if(mes=6){
+  console.log("junio")
+}else if(mes=7){ //condicional para ver que mes del año es
+  console.log("julio")
+}else if(mes=8){
+  console.log("agosto")
+}else if(mes=9){
+  console.log("septiembre")
+}else if(mes=10){
+  console.log("octubre")
+}else if(mes=11){
+  console.log("noviembre")
+}else if(mes=12){
+  console.log("diciembre")
+}else{
+  console.log("Error de opción")
+}
+}
+//30 ejercicio
+
+// Leer las longitudes de los lados
+let a = parseFloat(prompt("Ingrese la longitud del primer lado: "));
+let b = parseFloat(prompt("Ingrese la longitud del segundo lado: "));
+let c = parseFloat(prompt("Ingrese la longitud del tercer lado: "));
+
+if (a === b && b === c) { //determinar la longitud del triangulo
+    alert("El triángulo es equilátero.");
+} else if (a === b || b === c || a === c) {
+    alert("El triángulo es isósceles.");
+} else {
+    alert("El triángulo es escaleno.");
+}
+// 31 ejercicio
+
+// Leer los 3 números
+let num1 = parseFloat(prompt("Ingrese el primer número: "));
+let num2 = parseFloat(prompt("Ingrese el segundo número: "));
+let num3 = parseFloat(prompt("Ingrese el tercer número: "));
+
+
+let numeros = [num1, num2, num3]; // ordenar de mayor a menor
+numeros.sort((a, b) => b - a);
+
+alert("Los números ordenados de mayor a menor son: " + numeros.join(", "));
+
+// 32 ejercicio
+
+// Leer el número
+let mes = parseInt(prompt("Ingrese un número entre 1 y 12: "));
+
+
+switch(mes) {
+    case 1: alert("Enero"); break;
+    case 2: alert("Febrero"); break;
+    case 3: alert("Marzo"); break;
+    case 4: alert("Abril"); break;
+    case 5: alert("Mayo"); break; // Mostrar el nombre del mes correspondiente
+    case 6: alert("Junio"); break;
+    case 7: alert("Julio"); break;
+    case 8: alert("Agosto"); break;
+    case 9: alert("Septiembre"); break;
+    case 10: alert("Octubre"); break;
+    case 11: alert("Noviembre"); break;
+    case 12: alert("Diciembre"); break;
+    default: alert("Error de opción"); break;
+}
